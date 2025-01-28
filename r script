@@ -12,7 +12,7 @@ plink_test_command <- paste(plink_executable, "--version")
 system(plink_test_command)
 
 # Step 0: Convert VCF to PLINK format
-system("plink --vcf GENO_VCF.vcf --recode --out GBS97.plk")
+system("plink --vcf GENO_VCF.vcf --recode --out GBS128.plk")
 
 # Step 1: Convert PED/MAP files to binary format
 system("plink --ped GBS128.plk.ped --map GBS128.plk.map --make-bed --out GBS128.plk")
